@@ -12,7 +12,7 @@ import (
 
 func main() {
 	http.HandleFunc("/a", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("hhhhh"))
+		w.Write([]byte("1234"))
 	})
 	err := http.ListenAndServe(":9090", nil)
 	if err != nil {
