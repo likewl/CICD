@@ -14,7 +14,7 @@ import (
 func main() {
 	http.HandleFunc("/a", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Println(time.Now().Format("2006-01-02 15:04:05"))
-		w.Write([]byte("时间12344"))
+		w.Write([]byte(time.Now().Format("2006-01-02 15:04:05")))
 	})
 	err := http.ListenAndServe(":9090", nil)
 	if err != nil {
