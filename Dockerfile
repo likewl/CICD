@@ -7,4 +7,5 @@ COPY log test ./
 EXPOSE 9090
 
 # 启动容器时运行的命令
+
 CMD ["/test"]
