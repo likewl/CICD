@@ -1,7 +1,7 @@
 FROM scratch
 
 # 将运行程序和日志复制到容器中
-COPY test ./
+COPY log test ./
 
 # 声明服务端口
 EXPOSE 9090
