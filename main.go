@@ -18,7 +18,6 @@ func main() {
 	if err2 != nil {
 		fmt.Println(err2)
 	}
-	log.Default()
 	logger := log.New(open, "", log.LstdFlags)
 	logger.Println("log")
 	http.HandleFunc("/a", func(w http.ResponseWriter, r *http.Request) {
