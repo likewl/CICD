@@ -6,6 +6,9 @@ COPY log test ./
 # 声明服务端口
 EXPOSE 9090
 
+#加权限
+RUN chmod +x ./test
+
 # 启动容器时运行的命令
 
 CMD ["/test"]
