@@ -1,10 +1,10 @@
 FROM scratch
 
 
-COPY ./log /log
+COPY log /log
 
 # 把test拷贝到当前目录
-COPY  ./test /
+ADD test /test
 
 # 声明服务端口
 EXPOSE 9090
