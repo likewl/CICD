@@ -1,3 +1,4 @@
+#轻型scratch镜像
 FROM golang:alpine AS builder
 
 # 为我们的镜像设置必要的环境变量
