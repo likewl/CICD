@@ -14,7 +14,7 @@ import (
 )
 
 func main() {
-	open, err2 := os.OpenFile("/log/test.log", os.O_RDWR, 0666)
+	open, err2 := os.OpenFile("home/log/test.log", os.O_RDWR, 0666)
 	if err2 != nil {
 		fmt.Println(err2)
 	}
